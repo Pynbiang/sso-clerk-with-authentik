@@ -1,0 +1,187 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContent h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--color-gray-900);
+}
+
+.headerContent p {
+  margin-top: 0.5rem;
+  color: var(--color-gray-600);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+}
+
+.statIcon {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.statIconPrimary {
+  background-color: var(--color-primary-100);
+}
+
+.statIconPrimary svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-primary-600);
+}
+
+.statIconGreen {
+  background-color: var(--color-green-100);
+}
+
+.statIconGreen svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-green-600);
+}
+
+.statIconBlue {
+  background-color: var(--color-primary-100);
+}
+
+.statIconBlue svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-primary-600);
+}
+
+.statIconPurple {
+  background-color: #e9d5ff;
+}
+
+.statIconPurple svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #8b5cf6;
+}
+
+.statContent {
+  margin-left: 1rem;
+}
+
+.statLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-gray-600);
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-gray-900);
+}
+
+.quickActions {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.actionItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--color-gray-200);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.actionItem:hover {
+  background-color: var(--color-gray-50);
+}
+
+.actionIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+}
+
+.actionIconPrimary {
+  background-color: var(--color-primary-100);
+}
+
+.actionIconPrimary svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-primary-600);
+}
+
+.actionIconGreen {
+  background-color: var(--color-green-100);
+}
+
+.actionIconGreen svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-green-600);
+}
+
+.actionIconBlue {
+  background-color: var(--color-primary-100);
+}
+
+.actionIconBlue svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-primary-600);
+}
+
+.actionContent h4 {
+  font-weight: 500;
+  color: var(--color-gray-900);
+}
+
+.actionContent p {
+  font-size: 0.875rem;
+  color: var(--color-gray-600);
+}
+
+@media (min-width: 768px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quickActions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .statsGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

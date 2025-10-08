@@ -14,6 +14,7 @@ export default function SignUpPage() {
             <SignUp
               routing="path"
               path="/sign-up"
+              signInFallbackRedirectUrl="/dashboard"
               afterSignOutUrl="/dashboard"
               appearance={{
                 elements: {
